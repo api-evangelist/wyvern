@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+notes: All probed /.well-known/ documents returned 404 - Wyvern publishes no well-known discovery
+  surface on its website or open-data host. Absence recorded as valid probe data; no WellKnown or
+  SecurityTxt pointer wired in apis.yml because nothing is present.
+hosts:
+- host: https://wyvern.space
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /security.txt
+    status: 404
+- host: https://wyvern-odp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404

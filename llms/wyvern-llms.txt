@@ -1,0 +1,70 @@
+# Wyvern Knowledge Centre
+
+> The Wyvern Knowledge Centre teaches how to work with Wyvern hyperspectral satellite Earth observation imagery. It contains background articles on GIS and hyperspectral concepts, hands-on tutorials for QGIS/EnMAP-Box, Python, ArcGIS Pro, and ENVI, real-world use cases, and an interactive hyperspectral index library. All tutorials use freely available imagery from Wyvern's Open Data Program.
+
+Notes: All content is also published as clean markdown. The full text of every page is concatenated in [llms-full.txt](https://knowledge.wyvern.space/llms-full.txt). The interactive hyperspectral index library is data-driven; see the reference links below.
+
+## Getting started & core concepts
+
+- [Geospatial Basics](https://knowledge.wyvern.space/docs/documentation/getting_started/geospatial_basics): Geospatial fundamentals for earth observation: the difference between vector and raster data, common file formats, and how they are used with Wyvern hyperspectral imagery.
+- [Knowledge Centre](https://knowledge.wyvern.space/docs/documentation/): Wyvern's hyperspectral Knowledge Centre — background articles on GIS and hyperspectral imaging, plus data sources, use cases, and resources for working with Wyvern satellite imagery.
+- [Hyperspectral Basics](https://knowledge.wyvern.space/docs/documentation/getting_started/hyperspectral_basics): An introduction to hyperspectral imaging: the electromagnetic spectrum, and how panchromatic, multispectral, and hyperspectral earth observation imagery differ.
+- [Hyperspectral Image Formats](https://knowledge.wyvern.space/docs/documentation/getting_started/hyperspectral_image_formats): Hyperspectral image formats explained: the data cube concept and common raster formats including GeoTIFF, ENVI, and HDF5 used to store hyperspectral imagery.
+- [Processing Levels](https://knowledge.wyvern.space/docs/documentation/getting_started/processing_levels): Earth observation processing levels (L0–L4) explained, plus the details of Wyvern's L1B top-of-atmosphere radiance product, including projection, units, and delivery format.
+- [Understanding the STAC Format](https://knowledge.wyvern.space/docs/documentation/getting_started/stac_documentation_and_tools): Understand the SpatioTemporal Asset Catalog (STAC) — items, catalogs, and collections — why Wyvern uses STAC to deliver imagery, and tools like PySTAC for accessing it.
+- [Hyperspectral Signatures](https://knowledge.wyvern.space/docs/documentation/getting_started/hyperspectral_signatures): How spectral signatures identify materials in hyperspectral imagery, plus mixed pixels, endmember extraction (spectral unmixing), and pixel classification techniques.
+- [Common Tools](https://knowledge.wyvern.space/docs/documentation/getting_started/common_tools): An overview of common geospatial and hyperspectral tools — QGIS, ArcGIS, ENVI, Python, R, and GDAL — to help you choose software for analyzing Wyvern imagery.
+- [Atmospheric Correction](https://knowledge.wyvern.space/docs/documentation/getting_started/atmospheric_correction): Why hyperspectral imagery needs atmospheric correction to convert L1B top-of-atmosphere radiance to L2A surface reflectance, and tools (ATCOR, ENVI QUAC, ACOLITE, Py6S) for Wyvern data.
+
+## Datasets & use cases
+
+- [Plant Health Indices](https://knowledge.wyvern.space/docs/documentation/datasets_and_use_cases/plant_health_indices): How hyperspectral indices measure plant health — chlorophyll, carotenoids, and leaf area — using narrowband indices like RENDVI and VREI2 on Wyvern Dragonette imagery.
+- [Monitoring Carbon Capture](https://knowledge.wyvern.space/docs/documentation/datasets_and_use_cases/monitoring_carbon): How hyperspectral imagery can support carbon credit validation and greenhouse gas monitoring, including the use of indices such as LCAI and RENDVI.
+- [Soil & Vegetation Moisture](https://knowledge.wyvern.space/docs/documentation/datasets_and_use_cases/moisture): Measuring soil and vegetation moisture with hyperspectral SWIR imagery for agriculture, including the NMDI index and Wyvern's second-generation satellite capabilities.
+
+## Additional data & spectral references
+
+- [Material Reflectance Libraries](https://knowledge.wyvern.space/docs/documentation/more/material_reflectance): Material reflectance spectral libraries for hyperspectral analysis, including the USGS Spectral Library, Reading's urban surfaces library, and the ECOSTRESS Spectral Library.
+- [Additional Datasets](https://knowledge.wyvern.space/docs/documentation/more/additional_datasets): Additional hyperspectral datasets to explore beyond Wyvern, including NASA AVIRIS / AVIRIS-NG, Germany's EnMAP mission, and the NEON airborne observatory.
+
+## Tutorials: QGIS & EnMAP-Box
+
+- [QGIS](https://knowledge.wyvern.space/docs/tutorials/qgis/): Tutorials for working with Wyvern hyperspectral imagery in free and open-source QGIS and the EnMAP-Box plugin — loading data, PCA, spectra, and indices.
+- [Loading Data in QGIS & EnMAP Box](https://knowledge.wyvern.space/docs/tutorials/qgis/loading_data): Step-by-step tutorial for loading and visualizing Wyvern hyperspectral imagery in QGIS and the EnMAP-Box plugin, including RGB / CIR band selection and contrast adjustment.
+- [Creating PCA images in QGIS](https://knowledge.wyvern.space/docs/tutorials/qgis/pca): Create principal component analysis (PCA) images from Wyvern hyperspectral data in QGIS using the Orfeo Toolbox for dimensionality reduction and visualization.
+- [Visualizing Spectra & Plotting](https://knowledge.wyvern.space/docs/tutorials/qgis/visualizing_spectra): How to select pixels and visualize their spectral curves and 2D scatter plots from Wyvern hyperspectral imagery using QGIS and the EnMAP-Box.
+- [Index Calculations in QGIS](https://knowledge.wyvern.space/docs/tutorials/qgis/creating_indices): Calculate hyperspectral indices such as RENDVI from Wyvern imagery in QGIS using the raster calculator, and style the output with a color ramp.
+
+## Tutorials: Python
+
+- [Python](https://knowledge.wyvern.space/docs/tutorials/python/): Tutorials and key Python packages — Rasterio, NumPy, GeoPandas, Xarray, Dask, Spectral Python — for analyzing Wyvern hyperspectral imagery.
+- [Loading & Viewing Wyvern Data in Python](https://knowledge.wyvern.space/docs/tutorials/python/loading_data): Tutorial for loading and visualizing Wyvern hyperspectral data in Python with Rasterio and Matplotlib, including downloading via STAC and rendering RGB and color-infrared composites.
+- [Visualizing Spectra & Plotting](https://knowledge.wyvern.space/docs/tutorials/python/visualizing_spectra): Plot pixel spectral curves and band scatter plots from Wyvern hyperspectral imagery in Python using Rasterio, NumPy, and Matplotlib.
+- [Index Calculations with Python](https://knowledge.wyvern.space/docs/tutorials/python/index_calculation): Calculate hyperspectral indices like NDVI and NDWI in Python using NumPy array math on raster bands. (Note: this tutorial uses legacy drone data; an update is pending.)
+- [Water Quality Monitoring with Python](https://knowledge.wyvern.space/docs/tutorials/python/water_quality_indices): Monitor water quality from space by calculating hyperspectral indices like NDWI, NDTI, and NDCI in Python with NumPy array math on Dragonette-3 imagery of Lake Maracaibo, Venezuela.
+- [Detecting Rare Earth Elements](https://knowledge.wyvern.space/docs/tutorials/python/detecting_rare_earth_elements): Detect neodymium (a rare earth element) in Wyvern hyperspectral imagery in Python using continuum removal, spectral resampling of a USGS reference spectrum, and the Adaptive Cosine Estimator (ACE).
+
+## Tutorials: ArcGIS Pro
+
+- [ArcGIS Pro](https://knowledge.wyvern.space/docs/tutorials/arcgis_pro/): Tutorials for working with Wyvern hyperspectral imagery in Esri ArcGIS Pro, including loading and visualizing data.
+- [Loading Data in ArcGIS Pro](https://knowledge.wyvern.space/docs/tutorials/arcgis_pro/loading_data): Step-by-step tutorial for loading and visualizing Wyvern hyperspectral GeoTIFFs in ArcGIS Pro, including band combinations and symbology / contrast adjustments.
+
+## Tutorials: ENVI
+
+- [ENVI](https://knowledge.wyvern.space/docs/tutorials/envi/): Resources and tutorials for analyzing Wyvern hyperspectral imagery in NV5's ENVI software.
+
+## Overview pages
+
+- [Tutorials and Code](https://knowledge.wyvern.space/docs/tutorials/): Hands-on tutorials for working with Wyvern hyperspectral imagery in ArcGIS, ENVI, QGIS/EnMAP-Box, and Python — each using free imagery from Wyvern's Open Data Program.
+
+## Tools & reference
+
+- [Hyperspectral Index Library](https://knowledge.wyvern.space/hyperspectral_library): Interactive, searchable library of hyperspectral indices (NDVI, RENDVI, VREI2, and more) with per-instrument band mappings and equations for Wyvern Dragonette satellites.
+- [Wyvern Open Data Program](https://opendata.wyvern.space/): Free, downloadable Wyvern hyperspectral imagery used throughout the tutorials.
+- [Wyvern Data Product Guide](https://guide.wyvern.space/): Detailed product specifications for Wyvern imagery.
+- [Public code & notebooks (GitHub)](https://github.com/Nrevyw/wyvern-public-resources): Supporting code, environments, and example notebooks for the tutorials.
+
+## Optional
+
+- [Wyvern website](https://wyvern.space): Company and mission background.
+- [GitHub Discussions](https://github.com/Nrevyw/wyvern-public-resources/discussions): Questions and community support.

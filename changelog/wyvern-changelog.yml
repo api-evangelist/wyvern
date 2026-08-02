@@ -1,0 +1,61 @@
+generated: '2026-07-21'
+method: searched
+source: https://guide.wyvern.space/data-release-notes
+name: Wyvern Data Release Notes
+scheme: major.minor data-product versions, with processing levels designated L1B (top-of-atmosphere
+  radiance) and L2A (surface reflectance)
+current_version: '2.1'
+notes: Wyvern versions its hyperspectral data products (not a REST API surface). Release notes are
+  published on the Data Product Guide site. Recent window only; the live page is the source of truth.
+entries:
+- version: '2.1'
+  date: '2026-06-10'
+  breaking: false
+  highlights:
+  - Latest data product version released
+- version: 'L2A 2.0'
+  date: '2026-02-02'
+  breaking: true
+  highlights:
+  - Introduced Level-2A surface reflectance processing level, enabling atmospherically corrected
+    imagery analysis
+- version: 'L1B 2.0'
+  date: '2026-01-26'
+  breaking: true
+  highlights:
+  - Updated Level-1B product with changes to radiance values and filename conventions
+- version: '1.7'
+  date: '2025-11-18'
+  breaking: false
+  highlights:
+  - Calibration and validation improvements for Dragonette satellites
+- version: '1.6'
+  date: '2025-08-18'
+  breaking: false
+  highlights:
+  - Enhancements to cloud masking and tasking capabilities
+- version: '1.5'
+  date: '2025-05-05'
+  breaking: false
+  highlights:
+  - Improvements addressing striping and gradient artifacts
+- version: '1.4'
+  date: '2025-04-14'
+  breaking: false
+  highlights:
+  - Cross-calibration work between Dragonette-1 and Dragonette-3 satellites
+- version: '1.3'
+  date: '2024-11-01'
+  breaking: false
+  highlights:
+  - Band co-registration and geolocation accuracy improvements
+- version: '1.2'
+  date: '2024-08-07'
+  breaking: false
+  highlights:
+  - Image destriping and cloud mask enhancements
+- version: '1.1'
+  date: '2024-06-10'
+  breaking: false
+  highlights:
+  - Naming convention updates, pixel cell size standardization, and calibration improvements

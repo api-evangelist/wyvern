@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: wyvern.space
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 13 21:13:31 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: archive.wyvern.space
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  8 15:34:19 2026 GMT
+  hsts: false
+- host: opendata.wyvern.space
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 11 22:38:18 2026 GMT
+  hsts: true
+  hsts_max_age: 31556952
+domains:
+- domain: wyvern.space
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

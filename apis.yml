@@ -1,25 +1,95 @@
 aid: wyvern
 name: Wyvern
-description: Wyvern is a company surfaced as a portfolio company of uncork-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Wyvern is a Canadian space technology company operating the world's first commercial
+  hyperspectral satellite constellation. Its Dragonette satellites deliver 31-band VNIR imagery at
+  5.3 metre ground sampling distance for agriculture, forestry, energy, mining, and defence use
+  cases. Wyvern publishes an Open Data Program of free hyperspectral imagery delivered as a public
+  STAC 1.0.0 catalog, alongside a knowledge centre, data product guide, and open notebooks for
+  working with its imagery.
 url: https://raw.githubusercontent.com/api-evangelist/wyvern/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://wyvern-odp.com/wyvern-logo.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - uncork-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: open-data-stac-catalog
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
-- Company
-apis: []
+- Space
+- Earth Observation
+- Hyperspectral Imaging
+- Satellites
+- Geospatial
+- Remote Sensing
+- Open Data
+- Agriculture
+apis:
+- name: Wyvern Open Data Program STAC Catalog
+  description: Public SpatioTemporal Asset Catalog (STAC 1.0.0) for Wyvern's Open Data Program,
+    serving free hyperspectral imagery (L2A surface reflectance and L1B radiance) as machine-readable
+    JSON catalogs, collections, and items over HTTPS. Browsable via the Wyvern STAC Browser and
+    consumable with PySTAC and other STAC tooling. Static catalog - no STAC search API endpoint.
+  humanURL: https://opendata.wyvern.space/
+  baseURL: https://wyvern-odp.com
+  tags:
+  - STAC
+  - Hyperspectral
+  - Open Data
+  - Earth Observation
+  properties:
+  - type: CatalogRoot
+    url: https://wyvern-odp.com/catalog.json
+  - type: Documentation
+    url: https://knowledge.wyvern.space/docs/documentation/getting_started/stac_documentation_and_tools
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wyvern-domain-security.yml
 - type: Website
   url: https://wyvern.space
+- type: Portal
+  url: https://archive.wyvern.space/
+  name: Wyvern Image Archive Map
+- type: Documentation
+  url: https://knowledge.wyvern.space/
+- type: GettingStarted
+  url: https://knowledge.wyvern.space/docs/documentation/getting_started/geospatial_basics
+- type: Blog
+  url: https://wyvern.space/blog
+- type: PrivacyPolicy
+  url: https://wyvern.space/privacy-policy
+- type: Support
+  url: https://github.com/Nrevyw/wyvern-public-resources/discussions
+- type: GitHubOrganization
+  url: https://github.com/Nrevyw
+- type: ChangeLog
+  url: https://guide.wyvern.space/data-release-notes
+- type: ChangeLog
+  url: changelog/wyvern-changelog.yml
+- type: LLMsTxt
+  url: llms/wyvern-llms.txt
+- type: Conformance
+  url: conformance/wyvern-conformance.yml

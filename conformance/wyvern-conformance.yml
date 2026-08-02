@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: https://wyvern-odp.com/catalog.json
+standards:
+- id: stac-1.0.0
+  conforms: true
+  evidence: 'Root catalog https://wyvern-odp.com/catalog.json declares "stac_version": "1.0.0"
+    (fetched 2026-07-21, HTTP 200); Open Data Program imagery is delivered as STAC catalogs,
+    collections, and items, browsable at https://opendata.wyvern.space/ and documented at
+    https://knowledge.wyvern.space/docs/documentation/getting_started/stac_documentation_and_tools'
+- id: stac-api
+  conforms: false
+  evidence: 'Static STAC catalog only: /search, /conformance, /collections, and /api on
+    wyvern-odp.com all return 404 (probed 2026-07-21) - no dynamic STAC API endpoint published'
+- id: oauth2
+  conforms: false
+  evidence: No OAuth 2.0 surface published; the Open Data catalog is unauthenticated public HTTPS
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration on wyvern.space returns 404 (probed 2026-07-21)
