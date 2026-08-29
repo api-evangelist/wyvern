@@ -7,6 +7,17 @@ description: Wyvern is a Canadian space technology company operating the world's
   STAC 1.0.0 catalog, alongside a knowledge centre, data product guide, and open notebooks for
   working with its imagery.
 url: https://raw.githubusercontent.com/api-evangelist/wyvern/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
